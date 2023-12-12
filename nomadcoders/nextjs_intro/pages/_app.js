@@ -1,11 +1,11 @@
 import NavBar from '@/components/NavBar'
-// import { PageProps } from '../.next/types/app/layout'
+
+import Layout from './Layout'
 
 export default function App({ Component, PageProps }) {
   return (
-    <>
-      <NavBar />
+    <Layout>
       <Component {...PageProps} />
-    </>
+    </Layout>
   )
 }
